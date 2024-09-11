@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: #c9c9c9;
+    color: #000000;
+}
+.cabecalho__curriculo{
+    padding: 2% 0 0 15%;
+}
+.cabecalho__curriculo__menu{
+    display: flex;
+    gap: 80px;
+}
+.cabecalho__curriculo__menu__link{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000000;
+    text-decoration: none;
+}
+.cabecalho__curriculo__menu__link:hover{
+    color: #007bff;
+}
+.apresentacao{
+    display: flex;
+    padding:7% 28% 8%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.87rem;
+    font-family: 'Krona One', sans-serif;
+}
+.imagem{
+    border-radius: 15px;
+    box-shadow: 5px 5px #000000;
+   
+}
+.rodape{
+    display: flex;
+    flex-direction: column;
+    background-color:#000000;
+    color:#c9c9c9;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+@media (max-width: 1200px){
+    .cabecalho__curriculo{
+        padding: 10%;
+        }
+    .cabecalho__curriculo__menu{
+            justify-content: center;
+        }
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+        gap: 4.35rem;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+        padding: 40%;
+    }
+    .rodape{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: center;
+        position:static;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+}
